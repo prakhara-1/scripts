@@ -33,7 +33,7 @@ connect_to_server() {
   local local_port=6443
   local remote_port=6443
   local remote_host="172.16.0.1"
-  local remote_file="/etc/kubernetes/sedo.conf"
+  local remote_file="/etc/kubernetes/admin.conf"
   local local_file="$HOME/.kube/config"
 
   # Find and kill the process using the specified local port
