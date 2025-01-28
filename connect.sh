@@ -45,6 +45,9 @@ connect_to_server() {
     echo "No existing SSH connection found on port ${local_port}"
   fi
 
+  # create folder if not exists
+  mkdir -p  ~/.kube
+  
   # Copy the file from the server to the local machine
   sshpass -p "$password" scp ${user}@${server_ip}:${remote_file} ${local_file}
 
